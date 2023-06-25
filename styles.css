@@ -1,0 +1,280 @@
+:root {
+  /********** STYLE GUIDE *********/
+
+  /************ COLORS ************/
+  --veryDarkMagenta: hsl(300, 43%, 22%);
+  --softPink: hsl(333, 80%, 67%);
+  --darkGrayishMagenta: hsl(303, 10%, 53%);
+  --lightGrayishMagenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  /********** FONT FAMILY *********/
+  --leagueSpartan: "League Spartan", sans-serif;
+
+  /********* FONT WEIGHTS *********/
+  --fw400: 400;
+  --fw500: 500;
+  --fw700: 700;
+}
+
+/************* GENERAL ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: var(--leagueSpartan);
+}
+
+html {
+  position: relative;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****** SOCIAL PROOF SECTION ******/
+.social-proof-container {
+  max-width: 37.5rem;
+  margin: 8.2rem 2.4rem 9.9rem;
+}
+
+.background-top-img {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/*********** MAIN TEXT ************/
+.main-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  margin-bottom: 3.9rem;
+}
+
+.header-text {
+  font-weight: var(--fw700);
+  font-size: 4rem;
+  line-height: 3.2rem;
+  letter-spacing: -1.42857px;
+  color: var(--veryDarkMagenta);
+  text-align: center;
+}
+
+.main-paragraph-text {
+  font-weight: var(--fw500);
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.633333px;
+  color: var(--darkGrayishMagenta);
+  text-align: center;
+}
+
+/******** RATINGS CONTAINER *******/
+.ratings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 4.9rem;
+}
+
+.five-stars-container {
+  background: var(--lightGrayishMagenta);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.523rem;
+  padding: 1.6rem 0;
+}
+
+.star-img {
+  display: block;
+}
+
+.stars-container {
+  display: flex;
+  gap: 0.845rem;
+}
+
+.website-review-text {
+  font-weight: var(--fw700);
+  font-size: 1.7rem;
+  line-height: 1.6rem;
+  color: var(--veryDarkMagenta);
+}
+
+/**** VERIFIED BUYERS CONTAINER ***/
+.verified-buyers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.buyer-review-container {
+  background: var(--veryDarkMagenta);
+  border-radius: 0.8rem;
+  padding: 4rem 3.2rem 3.5rem;
+}
+
+.buyer-info-container {
+  display: flex;
+  gap: 2.3rem;
+  margin-bottom: 2.3rem;
+}
+
+.buyer-img {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.name-buyer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.buyer-name-text {
+  font-weight: var(--fw700);
+  font-size: 1.7rem;
+  line-height: 1.6rem;
+  color: var(--white);
+}
+
+.verified-buyer-text {
+  font-weight: var(--fw400);
+  font-size: 1.7rem;
+  line-height: 1.6rem;
+  color: var(--softPink);
+}
+
+.buyer-review-text {
+  font-weight: var(--fw500);
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.303571px;
+  color: var(--white);
+}
+
+.background-bottom-img {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+/******** 376px MEDIA QUERY *******/
+@media (min-width: 23.5em) {
+  .background-bottom-img {
+    right: 0;
+    left: initial;
+  }
+}
+
+/******* 1440px MEDIA QUERY *******/
+
+/****** SOCIAL PROOF SECTION ******/
+@media (min-width: 90em) {
+  .social-proof-container {
+    max-width: 144rem;
+    margin: 11.8rem 16.5rem 10rem;
+  }
+
+  /*********** MAIN TEXT **********/
+  .main-text-container {
+    max-width: 44.5rem;
+    max-height: 24.5rem;
+    gap: 1.6rem;
+    margin: initial;
+  }
+
+  .header-text {
+    font-size: 5.6rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.2rem;
+    text-align: initial;
+  }
+
+  .main-paragraph-text {
+    text-align: initial;
+  }
+
+  .text-and-ratings-container {
+    display: flex;
+    gap: 12.5rem;
+    margin-bottom: 7.1rem;
+  }
+
+  /******* RATINGS CONTAINER ******/
+  .ratings-container {
+    flex: 1;
+    margin: initial;
+    margin-top: 2.7rem;
+  }
+
+  .five-stars-container {
+    flex-direction: row;
+    gap: 3.245rem;
+    padding: 2rem 0 2rem 3.2rem;
+    max-width: 44.5rem;
+    max-height: 5.6rem;
+  }
+
+  .ratings-container .five-stars-container:nth-child(2) {
+    margin-left: 4.8rem;
+  }
+
+  .ratings-container .five-stars-container:nth-child(3) {
+    margin-left: 9.5rem;
+  }
+
+  /** VERIFIED BUYERS CONTAINER **/
+  .verified-buyers-container {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .buyer-review-container {
+    max-width: 35rem;
+    max-height: 23.4rem;
+  }
+
+  .buyer-info-container {
+    margin-bottom: 3.1rem;
+  }
+
+  .verified-buyers-container .buyer-review-container:nth-child(2) {
+    margin-top: 1.6rem;
+  }
+
+  .verified-buyers-container .buyer-review-container:nth-child(3) {
+    margin-top: 3.2rem;
+  }
+
+  .background-bottom-img {
+    right: -15px;
+  }
+}
+
+/******* 1441px MEDIA QUERY *******/
+@media (min-width: 90.0625em) {
+  .background-bottom-img {
+    position: fixed;
+  }
+}
